@@ -38,8 +38,8 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Button href={site.cta.secondary.href} variant="ghost" size="sm">
-            {site.cta.secondary.label}
+          <Button href="/login" variant="ghost" size="sm">
+            Client login
           </Button>
           <Button href={site.cta.primary.href} size="sm">
             {site.cta.primary.label}
@@ -71,12 +71,8 @@ export function Header() {
               </Link>
             ))}
             <div className="mt-3 flex flex-col gap-2">
-              <Button
-                href={site.cta.secondary.href}
-                variant="secondary"
-                size="lg"
-              >
-                {site.cta.secondary.label}
+              <Button href="/login" variant="secondary" size="lg">
+                Client login
               </Button>
               <Button href={site.cta.primary.href} size="lg">
                 {site.cta.primary.label}
