@@ -28,8 +28,8 @@
   /* Neutrals / canvas */
   --color-cream: #f7f4ee;
   --color-sand: #efe9df;
-  --color-ink: #10201a;
-  --color-muted: #566a62;
+  --color-ink: #0e1c17;
+  --color-muted: #44554e;
 
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
@@ -38,22 +38,13 @@
   --radius: 1rem;
 }
 
+/*
+ * The site is light-first (white cards, cream canvas), like the source page.
+ * Lock to a light color scheme so text styled with fixed dark tokens
+ * (text-ink / text-muted) always sits on a light background and stays legible.
+ */
 :root {
-  --background: var(--color-cream);
-  --foreground: var(--color-ink);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a1512;
-    --foreground: #eaf2ee;
-  }
-}
-:root[data-theme="dark"] {
-  --background: #0a1512;
-  --foreground: #eaf2ee;
-}
-:root[data-theme="light"] {
+  color-scheme: light;
   --background: var(--color-cream);
   --foreground: var(--color-ink);
 }

@@ -21,7 +21,7 @@ export function LogoCloud({
       {logos.map((logo) => (
         <span
           key={logo}
-          className="font-display text-muted/70 text-lg font-semibold tracking-tight"
+          className="font-display text-muted text-lg font-semibold tracking-tight"
         >
           {logo}
         </span>

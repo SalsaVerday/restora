@@ -19,7 +19,7 @@ export function HowItWorks() {
                 <span className="bg-brand-600 inline-flex size-11 items-center justify-center rounded-2xl text-white">
                   <step.icon className="size-5" />
                 </span>
-                <span className="font-display text-sand text-4xl font-bold">
+                <span className="font-display text-brand-200 text-4xl font-bold">
                   {String(i + 1).padStart(2, "0")}
                 </span>
               </div>
