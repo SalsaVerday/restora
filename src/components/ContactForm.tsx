@@ -43,10 +43,10 @@ export function ContactForm({
       <div className="bg-brand-50 flex flex-col items-center gap-4 rounded-3xl p-10 text-center">
         <CheckCircle2 className="text-brand-600 size-12" />
         <h2 className="font-display text-ink text-2xl font-semibold">
-          Thanks — we&apos;ll be in touch
+          Thanks — I&apos;ll be in touch
         </h2>
         <p className="text-muted max-w-sm">
-          A member of our team will reach out within one business day.
+          I&apos;ll reach out within one business day to set up your consult.
         </p>
       </div>
     );
@@ -59,11 +59,10 @@ export function ContactForm({
         <Field label="Last name" name="lastName" required />
       </div>
       <Field label="Email" name="email" type="email" required />
-      <Field label="Company (optional)" name="company" />
 
       <div className="flex flex-col gap-1.5">
         <label htmlFor="type" className="text-ink text-sm font-medium">
-          What can we help with?
+          What are you looking for?
         </label>
         <select
           id="type"
@@ -71,9 +70,11 @@ export function ContactForm({
           defaultValue={defaultType}
           className="text-ink focus:border-brand-500 rounded-xl border border-black/10 bg-white px-4 py-3 focus:outline-none"
         >
-          <option value="general">Getting started as a member</option>
-          <option value="demo">A demo for my organization</option>
-          <option value="support">Support with my account</option>
+          <option value="rehab">Rehab / return from injury</option>
+          <option value="strength">Strength &amp; conditioning</option>
+          <option value="hybrid">Hybrid performance</option>
+          <option value="remote">Remote coaching</option>
+          <option value="teams">For a team, gym or unit</option>
         </select>
       </div>
 
@@ -86,7 +87,7 @@ export function ContactForm({
           name="message"
           rows={4}
           className="text-ink focus:border-brand-500 rounded-xl border border-black/10 bg-white px-4 py-3 focus:outline-none"
-          placeholder="Tell us a little about what you're looking for…"
+          placeholder="Tell me about your goals, your injury, or what you're training for…"
         />
       </div>
 
@@ -107,7 +108,7 @@ export function ContactForm({
             <Loader2 className="size-4 animate-spin" /> Sending…
           </>
         ) : (
-          "Send message"
+          "Request my consult"
         )}
       </Button>
     </form>

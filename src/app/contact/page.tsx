@@ -1,31 +1,31 @@
 import type { Metadata } from "next";
-import { Mail, MessageSquare, Building2 } from "lucide-react";
+import { HeartPulse, Dumbbell, Smartphone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ContactForm } from "@/components/ContactForm";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Book a consult",
   description:
-    "Get in touch with Restora — whether you're a member getting started, an organization exploring a rollout, or need support.",
+    "Book a consult with Olson Performance & Physical Therapy — rehab, strength & conditioning, hybrid performance, or remote coaching.",
 };
 
 const highlights = [
   {
-    icon: Mail,
-    title: "Get started",
-    body: "Tell us about your pain and we'll match you with a physical therapist.",
+    icon: HeartPulse,
+    title: "Rehab & return from injury",
+    body: "Resolve the pain and rebuild — with a plan that gets you all the way back, not just to pain-free.",
   },
   {
-    icon: Building2,
-    title: "For organizations",
-    body: "Request a demo and see how Restora lowers MSK spend for your population.",
+    icon: Dumbbell,
+    title: "Strength & performance",
+    body: "Train for real, durable strength, coached with a clinician's eye so you stay healthy doing it.",
   },
   {
-    icon: MessageSquare,
-    title: "Support",
-    body: "Already a member? We're here to help you get the most from your plan.",
+    icon: Smartphone,
+    title: "Remote coaching",
+    body: "Not local? Get fully remote programming and coaching delivered through the app.",
   },
 ];
 
@@ -35,16 +35,17 @@ export default async function ContactPage({
   searchParams: Promise<{ type?: string }>;
 }) {
   const { type } = await searchParams;
-  const defaultType = type === "demo" ? "demo" : "general";
+  const defaultType =
+    type === "remote" ? "remote" : type === "consult" ? "hybrid" : "rehab";
 
   return (
     <section className="from-brand-50 bg-gradient-to-b to-[var(--background)]">
       <Container className="grid gap-12 py-20 sm:py-24 lg:grid-cols-2 lg:gap-16">
         <div className="flex flex-col gap-8">
           <SectionHeading
-            eyebrow="Contact"
-            title="Let's talk about your pain-free plan"
-            lead="Fill out the form and the right person on our team will get back to you within one business day."
+            eyebrow="Book a consult"
+            title="Let's build your comeback"
+            lead="Tell me a bit about your goals or your injury and I'll get back to you within one business day to set up your consult."
           />
           <ul className="flex flex-col gap-6">
             {highlights.map((h) => (

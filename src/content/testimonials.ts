@@ -1,26 +1,30 @@
+/**
+ * Client stories. Attributed to initials so no real person is misrepresented —
+ * swap in real (permission-granted) testimonials before publishing.
+ */
 export const testimonials = [
   {
     quote:
-      "I'd been putting off knee surgery for two years. Twelve weeks with Restora and my PT, and I'm hiking again — pain-free.",
-    name: "Dana R.",
-    role: "Member, chronic knee pain",
+      "Three PTs told me to just rest my shoulder. Olson actually got me stronger than before the injury — I'm back to pressing heavier than I ever have.",
+    name: "J. R.",
+    role: "Post-op shoulder → back to lifting",
   },
   {
     quote:
-      "Having a real therapist watch my form through the sensors made me actually trust the exercises. It felt personal, not like an app.",
-    name: "Marcus T.",
-    role: "Member, lower back pain",
+      "I came in rehabbing a knee and left with a full strength program. Having one coach who understood both sides made all the difference.",
+    name: "M. T.",
+    role: "ACL recovery → return to sport",
   },
   {
     quote:
-      "We rolled Restora out to 4,000 employees. Engagement blew past our other benefits and the MSK claims trend finally bent down.",
-    name: "Priya S.",
-    role: "VP of Total Rewards, Northwind",
+      "The remote coaching kept me honest between sessions. Form reviews on my own lifts fixed things I didn't even know were off.",
+    name: "S. K.",
+    role: "Remote strength & conditioning",
   },
   {
     quote:
-      "The daily nudges and the CBT lessons kept me going on the tough days. I never once felt like I was doing this alone.",
-    name: "Elena M.",
-    role: "Member, shoulder pain",
+      "As a tactical athlete, durability is everything. This is the first program that made me more resilient instead of just more sore.",
+    name: "D. M.",
+    role: "Tactical athlete, durability focus",
   },
 ];

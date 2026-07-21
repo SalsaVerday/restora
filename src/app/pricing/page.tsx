@@ -12,7 +12,7 @@ import { plans } from "@/content/pricing";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Restora is often free through your employer or health plan, available direct for $79/month, or custom-priced for organizations.",
+    "Simple, transparent packages for physical therapy, strength & conditioning, and hybrid or remote coaching with Olson Performance.",
 };
 
 export default function PricingPage() {
@@ -22,8 +22,8 @@ export default function PricingPage() {
         <Container className="py-20 text-center sm:py-24">
           <SectionHeading
             eyebrow="Pricing"
-            title="Care that fits your life — and your budget"
-            lead="Most members pay nothing through their employer. Prefer to start on your own? Restora Direct has you covered."
+            title="Straightforward packages, no surprises"
+            lead="Every path starts with an assessment. From there, choose in-person hybrid coaching or fully remote programming — whatever fits your goals and location."
             align="center"
           />
         </Container>

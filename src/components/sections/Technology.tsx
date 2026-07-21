@@ -2,11 +2,11 @@ import { Check } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
-import { technology } from "@/content/platform";
+import { technology } from "@/content/services";
 
 export function Technology() {
   return (
-    <Section id="technology" className="bg-brand-900 text-white">
+    <Section id="remote" className="bg-brand-900 text-white">
       <SectionHeading
         eyebrow={technology.eyebrow}
         title={<span className="text-white">{technology.title}</span>}

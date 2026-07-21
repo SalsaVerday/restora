@@ -12,12 +12,12 @@ import { Faq } from "@/components/sections/Faq";
 import { FinalCta } from "@/components/sections/FinalCta";
 
 export const metadata: Metadata = {
-  title: "Platform",
+  title: "Services",
   description:
-    "See how Restora combines a licensed physical therapist, an AI motion coach, and clinically proven programs to beat musculoskeletal pain from home.",
+    "Physical therapy, strength & conditioning, and hybrid performance coaching with Olson Performance — recover from injury and come back stronger, in person or remotely.",
 };
 
-export default function PlatformPage() {
+export default function ServicesPage() {
   return (
     <>
       <Hero />

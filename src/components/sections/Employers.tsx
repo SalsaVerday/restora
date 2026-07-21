@@ -3,11 +3,11 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { site } from "@/lib/site";
-import { employers } from "@/content/platform";
+import { employers } from "@/content/services";
 
 export function Employers() {
   return (
-    <Section id="employers">
+    <Section id="teams">
       <div className="bg-brand-600 rounded-[2.5rem] px-6 py-14 text-white sm:px-12">
         <div className="max-w-2xl">
           <SectionHeading

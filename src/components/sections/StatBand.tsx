@@ -1,7 +1,7 @@
 import { Section } from "@/components/ui/Section";
 import { StatCard } from "@/components/ui/StatCard";
 import { Reveal } from "@/components/ui/Reveal";
-import { stats } from "@/content/platform";
+import { stats } from "@/content/services";
 
 export function StatBand() {
   return (

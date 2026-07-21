@@ -2,11 +2,11 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { Reveal } from "@/components/ui/Reveal";
-import { pillars } from "@/content/platform";
+import { pillars } from "@/content/services";
 
 export function Pillars() {
   return (
-    <Section className="bg-sand/40">
+    <Section id="services" className="bg-sand/40">
       <SectionHeading
         eyebrow={pillars.eyebrow}
         title={pillars.title}

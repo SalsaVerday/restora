@@ -36,7 +36,7 @@ export function Logo({
           strokeLinejoin="round"
         />
       </svg>
-      <span>{site.name}</span>
+      <span>{site.shortName}</span>
     </Link>
   );
 }

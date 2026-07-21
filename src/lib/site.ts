@@ -1,24 +1,25 @@
 /**
  * Central brand & site configuration.
  *
- * Rename the product, tweak nav, or change CTA labels here — every component
+ * Rename the practice, tweak nav, or change CTA labels here — every component
  * reads from this file, so a rebrand is a one-file edit.
  */
 
 export const site = {
-  name: "Restora",
-  tagline: "Care for pain, wherever you are",
+  name: "Olson Performance & Physical Therapy",
+  shortName: "Olson Performance",
+  tagline: "Rehab that doesn't stop at pain-free",
   description:
-    "Restora pairs you with a licensed physical therapist and an AI motion coach to deliver a clinically proven, personalized plan to beat musculoskeletal pain — all from home.",
-  url: "https://restora.example.com",
-  email: "hello@restora.example.com",
+    "Olson Performance & Physical Therapy blends licensed physical therapy with high-level strength & conditioning — so you don't just recover, you come back stronger. Train in person or remotely.",
+  url: "https://olsonperformance.example.com",
+  email: "hello@olsonperformance.example.com",
   // Primary call-to-action used across the site.
   cta: {
-    primary: { label: "Get started", href: "/contact" },
-    secondary: { label: "Request a demo", href: "/contact?type=demo" },
+    primary: { label: "Book a consult", href: "/contact" },
+    secondary: { label: "Free intro call", href: "/contact?type=consult" },
   },
   nav: [
-    { label: "Platform", href: "/platform" },
+    { label: "Services", href: "/services" },
     { label: "Pricing", href: "/pricing" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
@@ -26,30 +27,30 @@ export const site = {
   footer: {
     columns: [
       {
-        title: "Platform",
+        title: "Services",
         links: [
-          { label: "How it works", href: "/platform#how-it-works" },
-          { label: "The technology", href: "/platform#technology" },
-          { label: "Clinical evidence", href: "/platform#evidence" },
-          { label: "For employers", href: "/platform#employers" },
+          { label: "Physical therapy & rehab", href: "/services#services" },
+          { label: "Strength & conditioning", href: "/services#services" },
+          { label: "Hybrid performance", href: "/services#services" },
+          { label: "Remote coaching", href: "/services#remote" },
         ],
       },
       {
-        title: "Company",
+        title: "Practice",
         links: [
           { label: "About", href: "/about" },
           { label: "Pricing", href: "/pricing" },
-          { label: "Contact", href: "/contact" },
-          { label: "Careers", href: "/about#careers" },
+          { label: "How it works", href: "/services#how-it-works" },
+          { label: "FAQ", href: "/services#faq" },
         ],
       },
       {
-        title: "Resources",
+        title: "Get started",
         links: [
-          { label: "FAQ", href: "/platform#faq" },
-          { label: "Blog", href: "/about#blog" },
-          { label: "Support", href: "/contact" },
-          { label: "Status", href: "/contact" },
+          { label: "Book a consult", href: "/contact" },
+          { label: "Free intro call", href: "/contact?type=consult" },
+          { label: "For teams & units", href: "/services#teams" },
+          { label: "Contact", href: "/contact" },
         ],
       },
       {
@@ -62,9 +63,9 @@ export const site = {
       },
     ],
     social: [
-      { label: "LinkedIn", href: "https://linkedin.com" },
       { label: "Instagram", href: "https://instagram.com" },
-      { label: "X", href: "https://x.com" },
+      { label: "LinkedIn", href: "https://linkedin.com" },
+      { label: "YouTube", href: "https://youtube.com" },
     ],
   },
 } as const;

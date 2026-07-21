@@ -9,8 +9,8 @@ export function Testimonials() {
   return (
     <Section className="bg-sand/40">
       <SectionHeading
-        eyebrow="Member stories"
-        title="Real people, real relief"
+        eyebrow="Client stories"
+        title="Real recoveries, real strength"
         align="center"
       />
       <div className="mt-14 grid gap-6 md:grid-cols-2">

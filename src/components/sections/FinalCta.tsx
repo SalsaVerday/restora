@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site";
 
 export function FinalCta({
-  title = "Ready to move without pain?",
-  subtitle = "Join thousands who found relief from home. Getting started takes two minutes.",
+  title = "Ready to come back stronger?",
+  subtitle = "Rehab an injury or chase a new level — it starts with a consult. Takes two minutes to reach out.",
 }: {
   title?: string;
   subtitle?: string;

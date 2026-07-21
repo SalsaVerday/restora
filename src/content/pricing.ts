@@ -1,50 +1,53 @@
+/**
+ * Service packages. Prices in [brackets] are placeholders — set your real
+ * rates before publishing.
+ */
 export const plans = [
   {
-    name: "Through your employer",
-    price: "$0",
-    cadence: "for eligible members",
+    name: "Assessment & consult",
+    price: "$[149]",
+    cadence: "one-time",
     description:
-      "If your employer or health plan partners with Restora, the full program is available at no cost to you.",
+      "The starting point for everyone. A full movement and strength assessment plus a clear plan you can act on — with or without ongoing coaching.",
     features: [
-      "Licensed physical therapist",
-      "Motion-sensor kit included",
-      "Unlimited sessions",
-      "Behavioral health support",
-      "In-app messaging with your care team",
+      "60–90 minute in-person evaluation",
+      "Movement & strength screening",
+      "Personalized action plan",
+      "Applied as credit toward a package",
     ],
-    cta: { label: "Check eligibility", href: "/contact" },
+    cta: { label: "Book an assessment", href: "/contact" },
     featured: false,
   },
   {
-    name: "Restora Direct",
-    price: "$79",
+    name: "Hybrid coaching",
+    price: "$[349]",
     cadence: "per month",
     description:
-      "Full access to the platform, billed monthly. Cancel anytime. Kit deposit refundable on return.",
+      "The core offering: rehab and strength & conditioning under one plan, with in-person sessions and app-based programming between them.",
     features: [
-      "Everything in the member plan",
-      "Dedicated PT match in 48 hours",
-      "Personalized 12-week program",
-      "Progress reviews every week",
-      "HSA / FSA eligible",
+      "In-person sessions each month",
+      "Custom app-based programming",
+      "Form reviews from your video",
+      "Direct messaging with your coach",
+      "Weekly check-ins & adjustments",
     ],
-    cta: { label: "Start now", href: "/contact" },
+    cta: { label: "Start hybrid coaching", href: "/contact" },
     featured: true,
   },
   {
-    name: "For organizations",
-    price: "Custom",
-    cadence: "volume pricing",
+    name: "Remote coaching",
+    price: "$[199]",
+    cadence: "per month",
     description:
-      "Deploy Restora across your population with eligibility, SSO, reporting, and a success team.",
+      "Fully remote programming and coaching for clients anywhere — clinician-informed training delivered through the app.",
     features: [
-      "Outcomes & utilization reporting",
-      "SSO and eligibility integration",
-      "Launch communications handled",
-      "Dedicated account manager",
-      "BAA and security review",
+      "Custom program built for you",
+      "Video demos for every movement",
+      "Form reviews & feedback",
+      "Direct messaging with your coach",
+      "Monthly progress reviews",
     ],
-    cta: { label: "Talk to sales", href: "/contact?type=demo" },
+    cta: { label: "Start remote coaching", href: "/contact?type=remote" },
     featured: false,
   },
 ];

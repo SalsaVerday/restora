@@ -1,7 +1,7 @@
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
-import { howItWorks } from "@/content/platform";
+import { howItWorks } from "@/content/services";
 
 export function HowItWorks() {
   return (

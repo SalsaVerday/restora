@@ -1,6 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { LogoCloud } from "@/components/ui/LogoCloud";
-import { trustedBy } from "@/content/platform";
+import { trustedBy } from "@/content/services";
 
 export function TrustBar() {
   return (

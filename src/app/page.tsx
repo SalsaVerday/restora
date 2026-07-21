@@ -9,7 +9,7 @@ import { StatCard } from "@/components/ui/StatCard";
 import { LogoCloud } from "@/components/ui/LogoCloud";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { site } from "@/lib/site";
-import { stats, pillars, trustedBy } from "@/content/platform";
+import { stats, pillars, trustedBy } from "@/content/services";
 
 export default function HomePage() {
   return (
@@ -17,7 +17,7 @@ export default function HomePage() {
       {/* Condensed hero */}
       <section className="from-brand-50 bg-gradient-to-b to-[var(--background)]">
         <Container className="flex flex-col items-center gap-6 py-20 text-center sm:py-28">
-          <Eyebrow>Digital MSK care</Eyebrow>
+          <Eyebrow>Physical therapy + performance</Eyebrow>
           <h1 className="font-display text-ink max-w-3xl text-4xl leading-[1.05] font-bold tracking-tight sm:text-6xl">
             {site.tagline}
           </h1>
@@ -28,8 +28,8 @@ export default function HomePage() {
             <Button href={site.cta.primary.href} size="lg">
               {site.cta.primary.label}
             </Button>
-            <Button href="/platform" variant="secondary" size="lg">
-              Explore the platform
+            <Button href="/services" variant="secondary" size="lg">
+              See services
               <ArrowRight className="size-4" />
             </Button>
           </div>
@@ -71,10 +71,10 @@ export default function HomePage() {
         </div>
         <div className="mt-10 text-center">
           <Link
-            href="/platform"
+            href="/services"
             className="text-brand-600 hover:text-brand-700 inline-flex items-center gap-2 font-medium"
           >
-            See how the platform works
+            See how it works
             <ArrowRight className="size-4" />
           </Link>
         </div>

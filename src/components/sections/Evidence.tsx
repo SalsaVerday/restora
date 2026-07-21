@@ -2,7 +2,7 @@ import { Check } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
-import { evidence } from "@/content/platform";
+import { evidence } from "@/content/services";
 
 export function Evidence() {
   const max = Math.max(...evidence.chart.map((d) => d.value));

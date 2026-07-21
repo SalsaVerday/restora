@@ -49,10 +49,9 @@ export function Footer() {
 
         <div className="text-brand-200 mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm sm:flex-row">
           <p>
-            © {new Date().getFullYear()} {site.name}. An original demo clone —
-            not affiliated with any real company.
+            © {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
-          <p>Made for pain relief, delivered from home.</p>
+          <p>Recover stronger. Perform longer.</p>
         </div>
       </Container>
     </footer>

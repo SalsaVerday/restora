@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { site } from "@/lib/site";
-import { hero } from "@/content/platform";
+import { hero } from "@/content/services";
 
 export function Hero() {
   return (

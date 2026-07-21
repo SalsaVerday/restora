@@ -1,7 +1,7 @@
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Accordion } from "@/components/ui/Accordion";
-import { faq } from "@/content/platform";
+import { faq } from "@/content/services";
 
 export function Faq() {
   return (
