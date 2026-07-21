@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/*
+ * Restora design tokens.
+ * Original palette (not a copy of any real brand): deep evergreen primary,
+ * warm coral accent, soft cream canvas, dark ink text.
+ */
+@theme {
+  /* Brand — evergreen */
+  --color-brand-50: #ecf6f2;
+  --color-brand-100: #cfe8df;
+  --color-brand-200: #9fd1bf;
+  --color-brand-300: #66b39c;
+  --color-brand-400: #2f9179;
+  --color-brand-500: #12775f;
+  --color-brand-600: #0d5c4a;
+  --color-brand-700: #0b4b3d;
+  --color-brand-800: #093b30;
+  --color-brand-900: #072e26;
+
+  /* Accent — warm coral */
+  --color-accent-100: #ffe3db;
+  --color-accent-300: #ffb2a0;
+  --color-accent-400: #ff8a72;
+  --color-accent-500: #f2634a;
+  --color-accent-600: #d94a32;
+
+  /* Neutrals / canvas */
+  --color-cream: #f7f4ee;
+  --color-sand: #efe9df;
+  --color-ink: #10201a;
+  --color-muted: #566a62;
+
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+
+  /* Marketing rhythm */
+  --radius: 1rem;
+}
+
+:root {
+  --background: var(--color-cream);
+  --foreground: var(--color-ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a1512;
+    --foreground: #eaf2ee;
+  }
+}
+:root[data-theme="dark"] {
+  --background: #0a1512;
+  --foreground: #eaf2ee;
+}
+:root[data-theme="light"] {
+  --background: var(--color-cream);
+  --foreground: var(--color-ink);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Visible focus for keyboard users. */
+:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
+}
